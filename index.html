@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Flow Drag</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>ত্রিংকন</h1>
+    <hr>
+    <p>
+      <br>
+      <span class="smallText mattText spreadText">"সাদাকালো এই জঞ্জালে ভরা মিথ্যেকথার শহরে,
+        <br>তোমার আমার লালনীল সংসার.."</span>
+      <br>
+      <br>
+      <span class="smallText mattText spreadText">জুন ৬, ২০১৮</span>
+    </p>
+  </header>
+
+  <div id="linksContainer"></div>
+
+  <div id="dotContainer">
+    <div class="box draggable bgred" id="div1"> </div>
+    <div class="box draggable bggreen" id="div2"> </div>
+    <div class="box draggable bgblue" id="div3"> </div>
+  </div>
+
+  <script src="./src/main.js"></script>
+  <script src="./external/jquery-1.12.4.js"></script>
+  <script src="./external/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $(".draggable").draggable();
+    });
+  </script>
+
+
+</body>
+
+</html>
